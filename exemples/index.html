@@ -13,7 +13,7 @@
 <div class="modawow" data-modalName="simpleModal">
     <div class="close_modawow">X</div>
     <h3>Modawow #1</h3>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eius magnam perferendis quisquam vitae voluptatibus. Aliquam autem consectetur maxime, molestias pariatur perferendis placeat quaerat recusandae sapiente sit soluta temporibus vero.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 </div>
 
 <div class="modawow" data-modalName="simpleModal2">
@@ -29,7 +29,16 @@
 <script src="js/jquery.modawow.js"></script>
 
 <script>
-    $('.modawow').modawow($('button'));
+    $('.modawow').modawow({
+        metas :{
+            target    : 'data-modalTarget',
+            modalName : 'data-modalName'
+        },
+        overlay       : $('#modawow_overlay'),
+        closeModal    : $('.close_modawow'),
+        activeModal   : $('.modawow_active'),
+        target        : this
+    });
 </script>
 
 </body>
