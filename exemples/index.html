@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Suchkit</title>
+    <link rel="stylesheet" href="css/style.min.css"/>
+</head>
+<body>
+
+<div id="modawow_overlay"></div>
+
+<div class="modawow" data-modalName="simpleModal">
+    <div class="close_modawow">X</div>
+    <h3>Modawow #1</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eius magnam perferendis quisquam vitae voluptatibus. Aliquam autem consectetur maxime, molestias pariatur perferendis placeat quaerat recusandae sapiente sit soluta temporibus vero.
+</div>
+
+<div class="modawow" data-modalName="simpleModal2">
+    <div class="close_modawow">X</div>
+    <h3>Modawow #2</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eius magnam perferendis quisquam vitae voluptatibus. Aliquam autem consectetur maxime, molestias pariatur perferendis placeat quaerat recusandae sapiente sit soluta temporibus vero.
+</div>
+
+<button data-modalTarget="simpleModal" class="modawow_active">simpleModal</button>
+<button data-modalTarget="simpleModal2" class="modawow_active">simpleModal2</button>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.modawow.js"></script>
+
+<script>
+    $('.modawow').modawow($('button'));
+</script>
+
+</body>
+</html>
